@@ -5,3 +5,10 @@
 // If the number does meet any of the above criteria, return the number as a string
 
 // Bonus: Write "tests" showing that it works (you can just use console.log for this)
+
+document.getElementById("myButton").onclick = function(){
+
+    var myNumber = document.getElementById("myInput").value;
+    console.log("Hello",myNumber);
+}
+
