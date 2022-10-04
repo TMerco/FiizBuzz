@@ -6,17 +6,19 @@
 
 // Bonus: Write "tests" showing that it works (you can just use console.log for this)
 
-document.getElementById("myButton").onclick = function(){
 
-    var num = getElementById("#myInput");
+let getValue = function(){
 
-    if (num%3 === 0){
-        document.write("Fizz");
-        console.log("Fizz")
+    let n = document.getElementById("myInput").value;
 
-    } else (num%5 === 0){
-        document.write("Buzz");
-        console.log("Buzz")
+    if ((n % 3 ===0) && (n % 5 ===0)){
+        console.log("FizzBuzz");
+    }else if(n % 5 === 0){
+        console.log("Buzz");
+    }else if(n % 3 === 0){
+        console.log("Fizz");
     }
-}
-
+    else{
+        console.log("No")
+    }
+};
