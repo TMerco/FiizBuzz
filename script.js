@@ -8,7 +8,15 @@
 
 document.getElementById("myButton").onclick = function(){
 
-    var myNumber = document.getElementById("myInput").value;
-    console.log("Hello",myNumber);
+    var num = getElementById("#myInput");
+
+    if (num%3 === 0){
+        document.write("Fizz");
+        console.log("Fizz")
+
+    } else (num%5 === 0){
+        document.write("Buzz");
+        console.log("Buzz")
+    }
 }
 
