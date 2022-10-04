@@ -22,3 +22,10 @@ let getValue = function(){
         console.log("No")
     }
 };
+
+//Tests
+
+let num1 = 15
+let num2 = 10
+let num3 = 6
+console.log(num2);
