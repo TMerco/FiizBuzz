@@ -26,7 +26,7 @@ let getValue = function(){
             return "Fizz";
         }
         else{
-            return "No";
+            return x;
         }
     };
 
