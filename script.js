@@ -4,28 +4,59 @@
 // If the number is evenly divisible by BOTH 3 and 5 (i.e. 15, 30) return the string "FizzBuzz"
 // If the number does meet any of the above criteria, return the number as a string
 
-// Bonus: Write "tests" showing that it works (you can just use console.log for this)
+// Bonus: Write "tests" showing that it works (you can just use console.log for this)5
 
 
 let getValue = function(){
 
     let n = document.getElementById("myInput").value;
 
-    if ((n % 3 ===0) && (n % 5 ===0)){
-        console.log("FizzBuzz");
-    }else if(n % 5 === 0){
-        console.log("Buzz");
-    }else if(n % 3 === 0){
-        console.log("Fizz");
-    }
-    else{
-        console.log("No")
-    }
+    let y = myfunction(n);
+
+    console.log(y);
 };
 
-//Tests
+    function myfunction(x){
 
-let num1 = 15
-let num2 = 10
-let num3 = 6
-console.log(num2);
+        if ((x % 3 ===0) && (x % 5 ===0)){
+            return "FizzBuzz";
+        }else if(x % 5 === 0){
+            return "Buzz";
+        }else if(x % 3 === 0){
+            return "Fizz";
+        }
+        else{
+            return "No";
+        }
+    };
+
+
+    //Tests
+
+    myTest1();
+    myTest2();
+    myTest3();
+
+ function myTest1(){
+    let t = 6;
+    let a = myfunction(t);
+    let result = "Fizz"
+
+    console.log("Input: " + t + "\nExpected Result: " + result + "\nActual Result: " + a);
+ }
+ 
+ function myTest2(){
+    let t = 10;
+    let a = myfunction(t);
+    let result = "Buzz"
+
+    console.log("Input: " + t + "\nExpected Result: " + result + "\nActual Result: " + a);
+ }
+
+ function myTest3(){
+    let t = 30;
+    let a = myfunction(t);
+    let result = "FizzBuzz"
+
+    console.log("Input: " + t + "\nExpected Result: " + result + "\nActual Result: " + a);
+ }
